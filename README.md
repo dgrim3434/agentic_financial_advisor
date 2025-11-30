@@ -1,6 +1,6 @@
 # 💹 Agentic AI Financial Advisor
 
-This project is my end-to-end attempt at building a fully local, research-backed **agentic financial advisor**. The system profiles the user, researches companies using multiple specialized agents, retrieves real SEC filings, and then produces a diversified investment strategy — all through an AI agent workflow instead of a single model.
+This project is my end-to-end attempt at building a fully local, research-backed **agentic financial advisor**. The system profiles the user, researches companies using multiple specialized agents, retrieves real SEC filings, and then produces a diversified investment strategy, all through an AI agent workflow instead of a single model.
 
 The goal was to show what a real, research-driven AI advisor could look like when each step is handled by an agent with a clear role and toolset.
 
@@ -69,4 +69,31 @@ The UI includes:
 
 ---
 
-## 📁 Project Structure
+## 🔧 Installation
+
+### 1. Clone the repo
+
+git clone https://github.com/<your-username>/agentic_financial_advisor.git
+cd agentic_financial_advisor
+
+### 2. Install dependencies
+pip install -r requirements.txt
+
+### 3. Install and run Ollama
+https://ollama.ai
+
+Then pull the models:
+ollama pull llama3
+ollama pull nomic-embed-text
+
+### 4. Add your Finnhub/OpenAI API keys
+$env:FINNHUB_API_KEY="your-key"
+$env:OPENAI_API_KEY="your-key"
+
+### Running the App
+streamlit run app.py
+
+### Notes
+  - The SEC loader fetches live 10-K filings directly from EDGAR
+  - The FAISS index is optional
+  - All heavy LLM work is currently being does locally through Ollama
