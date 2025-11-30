@@ -1,0 +1,61 @@
+# -------------------------
+# Python
+# -------------------------
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pdb
+
+# Virtual environments
+venv/
+.env/
+.venv/
+ENV/
+
+# -------------------------
+# Secrets / API Keys
+# -------------------------
+*.env
+.env
+.env.local
+OPENAI_API_KEY
+FINNHUB_API_KEY
+
+# -------------------------
+# Streamlit
+# -------------------------
+.streamlit/
+
+# -------------------------
+# RAG / FAISS Index
+# (These files are large, auto-generated, and should NOT be versioned.)
+# -------------------------
+data/sec_index/*
+!data/sec_index/.gitkeep
+
+# -------------------------
+# Ollama (local models & cache)
+# -------------------------
+~/.ollama/
+ollama/
+
+# -------------------------
+# Logs & Debug
+# -------------------------
+logs/
+*.log
+debug_*.md
+
+# -------------------------
+# Notebooks
+# -------------------------
+.ipynb_checkpoints/
+
+# -------------------------
+# OS / Editor Junk
+# -------------------------
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

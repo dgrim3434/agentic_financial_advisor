@@ -1,0 +1,13 @@
+{
+  "texts": [
+    "Apple Inc. is a multinational technology company. Revenue in 2024 was impacted by changes in product demand. \nThe company discusses risk factors including supply chain disruptions, competition, and regulatory uncertainty."
+  ],
+  "metadatas": [
+    {
+      "company": "AAPL",
+      "filing_type": "10K",
+      "year": "2024",
+      "source": "AAPL_10K_2024.txt"
+    }
+  ]
+}
